@@ -4,7 +4,7 @@ const https = require('https');
 const url = require('url');
 
 (function(){
-    const port = 8080;
+    const port = process.env.PORT || 8080;
 
     let server = http.createServer(function (req, res) {
         res.writeHead(200, {

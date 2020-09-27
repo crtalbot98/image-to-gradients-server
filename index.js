@@ -12,7 +12,7 @@ const url = require('url');
             'Access-Control-Allow-Origin': '*',
             'Access-Control-Allow-Credentials': true,
             'Access-Control-Allow-Methods': 'GET,PUT,POST,DELETE,OPTIONS',
-            'Access-Control-Allow-Headers': 'Origin,X-Requested-With,Content-Type,Accept,content-type,application/json'
+            'Access-Control-Allow-Headers': 'Authorization,Origin,X-Requested-With,Content-Type,Accept,content-type,application/json'
         });
         const parsedUrl = url.parse(req.url, true);
 

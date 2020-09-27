@@ -9,7 +9,10 @@ const url = require('url');
     let server = http.createServer(function (req, res) {
         res.writeHead(200, {
             'Content-Type': 'application/json',
-            'Access-Control-Allow-Origin': '*'
+            'Access-Control-Allow-Origin': '*',
+            'Access-Control-Allow-Credentials': true,
+            'Access-Control-Allow-Methods': 'GET,PUT,POST,DELETE,OPTIONS',
+            'Access-Control-Allow-Headers': 'Origin,X-Requested-With,Content-Type,Accept,content-type,application/json'
         });
         const parsedUrl = url.parse(req.url, true);
 
